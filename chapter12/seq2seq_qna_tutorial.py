@@ -218,8 +218,8 @@ def readLangs():
     print("Reading lines...")
 
     # 소스 파일과 타깃 파일을 줄단위로 읽어들인다 (※4)
-    inputs = open('./iot_input.txt', encoding='utf-8').read().strip().split('\n')
-    outputs = open('./iot_output.txt', encoding='utf-8').read().strip().split('\n')
+    inputs = open('./laundry_input.txt', encoding='utf-8').read().strip().split('\n')
+    outputs = open('./laundry_output.txt', encoding='utf-8').read().strip().split('\n')
 
     inputs = [normalizeString(s) for s in inputs]
     outputs = [normalizeString(s) for s in outputs]
